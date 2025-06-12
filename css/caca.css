@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+    background: #ffccd5;
+    color: #b22222;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ff4d6d;
+    z-index: 999;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(255, 77, 109, 0.4);
+    transition: top 0.3s ease-in-out;
+    text-align: center;
+  }
+
+  header h1, p, #contador {
+    margin: 5px;
+    color: white;
+  }
+
+  header h1 {
+    font-size: 28px;
+    font-weight: 600;
+  }
+
+  
+  
+  #contador {
+    font-weight: bold;
+    margin-top: 8px;
+    font-size: 1.2rem;
+  }
+  
+  #caça-container {
+
+    position: relative;
+    width: 90vw;
+    max-width: 900px;
+    height: 400px;
+    border: 2px solid #d72638;
+    border-radius: 16px;
+    background-color: #ffe6e9;
+    overflow: hidden;
+  }
+  
+  .tesouro {
+    position: absolute;
+    max-width: 100px;
+    max-height: 100px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+  }
+  
+  .tesouro:hover {
+    transform: scale(1.1);
+  }
+  
+  #mensagem {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    min-height: 30px;
+    text-align: center;
+    color: #a31724;
+  }
+  
+  #resetar {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff4d6d;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #resetar:hover {
+    background-color: #a31724;
+  }
+  

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quiz Romântico</title>
+  <link rel="stylesheet" href="css/quiz.css" />
+</head>
+<body>
+  <header>
+    <h1><strong>Quiz</strong></h1>
+  </header>
+
+ <div class="quiz-container">
+  <h1 id="titulo">Quiz Romântico</h1>
+  <p>Teste seus conhecimentos sobre nosso amor! 💖</p>
+  <div id="quiz-content" class="hidden">
+    <div class="pergunta" id="pergunta"></div>
+    <ul class="alternativas" id="alternativas"></ul>
+    <button id="proxima-btn" class="hidden">Próxima</button>
+  </div>
+
+  <div id="resultado"></div>
+  <div id="relatorio"></div>
+
+  <button id="iniciar-btn">Iniciar Quiz</button>
+  <button id="reiniciar-btn" class="hidden">Reiniciar Quiz</button>
+</div>
+
+  <script src="js/quiz.js"></script>
+</body>
+</html>

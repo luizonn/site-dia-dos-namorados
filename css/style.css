@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ffccd5, #ffb3c1, #ff8fab);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  flex-direction: column;
+  color: #800000;
+  overflow: hidden;
+  text-align: center;
+  transition: opacity 1s ease;
+  opacity: 1;
+}
+
+body.fade-out {
+  opacity: 0;
+}
+
+body.fade-in {
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 50px;
+  color: #800000;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.botoes {
+  display: flex;
+  gap: 30px;
+  position: relative;
+}
+
+.btn {
+  border: none;
+  padding: 15px 35px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: transform 0.3s, background-color 0.3s;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.btn-sim {
+  background-color: #ff4d6d;
+  color: white;
+}
+
+.btn-sim:hover {
+  animation: heartbeat 1.2s infinite ease-in-out;
+}
+
+@keyframes heartbeat {
+  0% { transform: scale(1); }
+  25% { transform: scale(1.05); }
+  50% { transform: scale(1); }
+  75% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.btn-nao {
+  background-color: #f0f0f0;
+  color: #800000;
+  position: relative;
+}
+
+.btn-nao:hover {
+  background-color: #e0e0e0;
+}

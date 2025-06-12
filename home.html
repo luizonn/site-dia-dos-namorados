@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Home - Nossa História</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/home.css" />
+</head>
+<body class="fade-out">
+  <header id="header">
+    <nav class="menu">
+      <ul>
+        <li><a href="memorias.html">Memórias</a></li>
+        <li><a href="caca.html">Caça ao Tesouro</a></li>
+        <li><a href="quiz.html">Quiz Romântico</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="momentos" class="sessao">
+      <h2>Nossos Momentos</h2>
+      <div class="galeria">
+        <div class="foto" data-title="09/09/2023" data-description="Nosso primeiro encontro na Edem, comemos hambúrgueres deliciosos, rimos, nos divertimos bastante e, no final, ainda comemoramos nossa boda de beijinho… com beijinho, é claro!">
+            <img src="img/momento-01.jpeg" alt="Momento 1">
+            <p>Primeiro<br> encontro</p>
+    
+        </div>
+        <div class="foto" data-title="31/12/2023" data-description="Nossa viagem para a praia, nadamos, surfamos e comemos bastante — principalmente açaí e milho. Juntos, assistimos à virada do ano com fogos de artifício iluminando o céu… e foi ali que eu te dei nossa aliança de namoro."">
+            <img src="img/momento-02.jpeg" alt="Momento 2">
+            <p>Viagem inesquecível</p>
+        </div>
+        <div class="foto" data-title="09/08/2024" data-description="Nosso 1º ano de namoro, te entreguei um buquê, trocamos presentes, fizemos um bolo para comemorar e ainda fomos comer comida japonesa. Simplesmente um dia incrível, que jamais deve ser esquecido.">
+            <img src="img/momento-03.jpeg" alt="Momento 3">
+            <p>Aniversário especial</p>
+        </div>
+      </div>
+    </section>
+    
+    <section id="cronometro">
+      <h2>Estamos juntos há...</h2>
+      <div class="contador">
+        <div class="item">
+          <div class="valor" id="anos">0</div>
+          <div class="label">Anos</div>
+        </div>
+        <div class="item">
+          <div class="valor" id="meses">0</div>
+          <div class="label">Meses</div>
+        </div>
+        <div class="item">
+          <div class="valor" id="dias">0</div>
+          <div class="label">Dias</div>
+        </div>
+        <div class="item">
+          <div class="valor" id="horas">0</div>
+          <div class="label">Horas</div>
+        </div>
+        <div class="item">
+          <div class="valor" id="minutos">0</div>
+          <div class="label">Minutos</div>
+        </div>
+        <div class="item">
+          <div class="valor" id="segundos">0</div>
+          <div class="label">Segundos</div>
+        </div>
+      </div>
+    </section>
+    
+
+    <section id="dados" class="sessao">
+      <h2>Datas Importantes</h2>
+      <ul>
+        <li>Começamos a conversar em <strong>14/05/2023</strong></li>
+        <li>Nos conhecemos em <strong>16/05/2023</strong></li>
+        <li>Primeiro beijo em <strong>19/05/2023</strong></li>
+        <li>Começamos a namorar em <strong>09/08/2023</strong></li>
+        <li>Nosso primeiro date foi <strong>09/09/2023</strong></li>
+        <li>Nos viajamos junto em <strong>23/09/2023</strong></li>
+      </ul>
+    </section>
+
+    <section id="memorias" class="sessao">
+      <h2>Memórias - Linha do Tempo</h2>
+      <!-- Aqui podemos colocar a linha do tempo depois -->
+      <p>Uma seção especial onde relembramos os momentos mais marcantes da nossa história juntos. Cada evento é uma página viva do nosso relacionamento — desde a primeira conversa até as viagens, aniversários e celebrações. A linha do tempo vai mostrar, de forma visual e cronológica, como nosso amor cresceu e se fortaleceu ao longo do tempo. É um espaço para reviver emoções, sorrir com as lembranças e celebrar tudo que construímos juntos.</p>
+    </section>
+
+    <section id="cacaatesouro" class="sessao">
+      <h2>Caça ao Tesouro</h2>
+      <p>Prepare-se para embarcar em uma aventura divertida e cheia de surpresas! Nesta seção, você encontrará pistas e desafios que levam a pequenas descobertas sobre nós e nossa história. É uma forma lúdica e interativa de explorar detalhes, segredos e momentos especiais que marcaram nosso relacionamento. A caça ao tesouro é perfeita para curtir juntos, brincar e se surpreender com o quanto cada detalhe importa.</p>
+    </section>
+
+    <section id="quiz" class="sessao">
+      <h2>Quiz Romântico</h2>
+      <p>Quer testar o quanto você conhece a nossa história? Aqui, você encontrará perguntas que revelam curiosidades, fatos e memórias que só nós compartilhamos. É uma maneira leve e divertida de relembrar momentos importantes, reforçar nosso carinho e, claro, dar boas risadas. Seja você o mestre do nosso romance ou queira descobrir ainda mais, esse quiz é um convite para celebrar nosso amor com conhecimento e emoção.</p>
+    </section>
+  </main>
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="modal-body">
+        <img id="modal-img" src="" alt="Foto">
+        <div>
+          <h3 id="modal-title">Data</h3>
+          <p id="modal-text">Descrição do momento...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+    <footer>
+        <p>&copy; 2025 Nossa História. Todos os direitos reservados.</p>  
+    </footer>
+
+
+  <script src="js/script.js"></script>
+  <script src="js/home.js"></script>
+  <script>
+    window.addEventListener('load', () => {
+      document.body.classList.remove('fade-out');
+      document.body.classList.add('fade-in');
+    });
+  </script>
+</body>
+</html>
